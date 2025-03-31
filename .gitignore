@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+ HEAD
+ HEAD
 # Compiled class file
 *.class
 
@@ -53,4 +54,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
->>>>>>> 1af7a54 (Initial commit)
+1af7a54 (Initial commit)
+git add .gitignore
+git rebase --continue
+4118fa1 (Initial commit)
