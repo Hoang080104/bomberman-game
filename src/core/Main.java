@@ -42,7 +42,6 @@ public class Main {
                     JOptionPane.YES_NO_OPTION);
 
             if (choice == JOptionPane.YES_OPTION) {
-                // Thêm một delay nhỏ để JOptionPane đóng hoàn toàn trước khi khởi động lại
                 SwingUtilities.invokeLater(() -> startGame());
             } else {
                 System.exit(0);
