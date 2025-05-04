@@ -4,7 +4,7 @@ This project is a Java implementation of the Bomberman game, which includes vari
 
 ## Class Inheritance Diagram
 
-
+```
 GameObject
 │
 ├── MovableGameObject
@@ -25,3 +25,4 @@ GameObject
     ├── Grass
     ├── Brick
     └── Portal
+```
