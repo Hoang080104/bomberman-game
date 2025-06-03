@@ -1,0 +1,33 @@
+1. Giới thiệu chung:
+
+  - Do hạn chế về thời gian và sức khỏe, dự án game Bomberman này chưa được hoàn thiện đầy đủ. Video demo này sẽ trình bày một số chức năng cơ bản đã được thực hiện.
+  - Vì game chưa có hình ảnh nhân vật và vật thể, các ô màu sẽ được sử dụng để thay thế, giúp tập trung vào cơ chế gameplay chính:
+      - Màu xám: Tường (Wall) - chướng ngại vật cố định.
+      - Màu xanh lá: Cỏ (Grass) - khu vực di chuyển được của nhân vật và quái vật.
+      - Màu nâu: Gạch (Brick) - chướng ngại vật có thể phá hủy bằng bom.
+      - Màu tím: Cổng (Portal) - mục tiêu để chiến thắng màn chơi.
+      - Màu hồng nhạt: Balloom - loại quái vật di chuyển ngẫu nhiên.
+      - Màu đỏ: Oneal - loại quái vật thông minh hơn, có thể đuổi theo người chơi.
+
+2. Các chức năng đã thực hiện:
+
+  - Xây dựng bản đồ linh hoạt: Bản đồ màn chơi được tạo ra từ một tệp cấu hình (trong thư mục resources), cho phép dễ dàng thay đổi bố cục và kích thước màn chơi.
+  - Điều khiển Bomber: Người chơi điều khiển nhân vật Bomber di chuyển bằng 4 phím mũi tên trên bàn phím.
+  - Hành vi của Enemy:
+      - Balloom: Di chuyển hoàn toàn ngẫu nhiên.
+      - Oneal: Di chuyển ngẫu nhiên, nhưng sẽ đuổi theo Bomber nếu phát hiện trong tầm nhìn.
+  - Xử lý va chạm và bom nổ:
+      - Bomber và Enemy không thể đi xuyên qua Wall và Brick.
+      - Bom nổ phá hủy Brick và tiêu diệt Enemy trong phạm vi nổ.
+      - Bomber sẽ thua nếu dính vụ nổ bom.
+  - Portal:
+      - Portal thường ẩn dưới một Brick, sẽ xuất hiện khi Brick đó bị phá hủy hoặc tất cả enemy đều bị tiêu diệt.
+      - Người chơi cần tiêu diệt hết Enemy trước khi chạm vào Portal để chiến thắng.
+  - Kết thúc màn chơi: Khi thua hoặc thắng, game sẽ hiển thị cửa sổ hỏi người chơi có muốn chơi lại hay không.
+
+3. Các chức năng chưa hoàn thiện:
+
+  - Chưa giới hạn số bom. 
+  - Chưa có các Item hỗ trợ người chơi.
+  - Chưa có chức năng chuyển màn chơi.
+  - Thuật toán di chuyển của Enemy còn đơn giản.
